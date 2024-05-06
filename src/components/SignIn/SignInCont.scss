@@ -1,0 +1,97 @@
+.sign-in {
+    background-color: rgba(186, 32, 37, 1);
+    height: 100%;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__man {
+        width: 60%;
+        transform: translateY(90px);
+        position: relative;
+        z-index: 5;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__wrap {
+    }
+}
+.sign-in-form {
+    width: 40%;
+    background-color: rgba(246, 246, 246, 1);
+    position: relative;
+    z-index: 7;
+    padding: 50px 18px;
+    border-radius: 10px;
+
+    button {
+        width: 100%;
+        background-color: rgba(186, 32, 37, 1);
+        text-align: center;
+        padding: 26px 0;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 600;
+        border-radius: 5px;
+        margin-top: 12px;
+    }
+    &__form {
+    }
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    &__inputs {
+        margin-top: 20px;
+        input {
+            width: 100%;
+            font-size: 18px;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(205, 205, 205, 1);
+            border-radius: 5px;
+            margin-bottom: 6px;
+        }
+    }
+    &__problem {
+        text-align: center;
+        font-size: 16px;
+        text-decoration: underline;
+        color: rgba(79, 79, 79, 1);
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    &__social {
+        margin-top: 29px;
+    }
+    &__socialtitle {
+        text-align: center;
+        font-size: 18px;
+        color: rgba(79, 79, 79, 1);
+        font-weight: 600;
+    }
+    &__title {
+        text-align: center;
+        font-size: 28px;
+        color: rgba(79, 79, 79, 1);
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sign-in__content {
+        flex-direction: column;
+    }
+    .sign-in-form {
+        width: 100%;
+    }
+    .sign-in__man {
+        width: 100%;
+    }
+}

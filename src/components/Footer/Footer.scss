@@ -1,0 +1,51 @@
+
+.footer {
+    background-color: rgba(12, 12, 12, 1);
+    padding: 40px 0;
+    position: relative;
+    z-index: 7;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    &__go {
+        border: 1px solid #b6b6b6;
+        border-radius: 50px;
+        max-width: 307px;
+        width: 100%;
+        padding: 17px 17px;
+        text-align: center;
+        color: #b6b6b6;
+        span {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        img {
+            margin-left: 34px;
+        }
+    }   
+    &__logo {
+    }
+    &__politic {
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        font-weight: 400;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer__go {
+        img {
+            margin-left: 15px;
+        }
+    }
+}
